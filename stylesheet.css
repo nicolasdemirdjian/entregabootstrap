@@ -6,10 +6,9 @@
     box-sizing: border-box;
 }
 
-body{
+.generico{
     font-family: 'Playfair Display', serif;
     background-image: url(https://http2.mlstatic.com/D_NQ_NP_881541-MLU46792563088_072021-O.jpg);
-
 }
 
 /*-------------------------- Navbar --------------------------*/
@@ -21,7 +20,6 @@ body{
     padding: 0px;
     margin: 0px;
     background-size: 490px;
-    background-image: url(https://http2.mlstatic.com/D_NQ_NP_881541-MLU46792563088_072021-O.jpg);
     
 }
 .encabezado {
@@ -31,6 +29,8 @@ body{
     font-family: 'Akshar', sans-serif;
     background-image: url(https://w0.peakpx.com/wallpaper/878/729/HD-wallpaper-bricks-wall-construction-pattern-abstract.jpg);
     padding: 70px;
+    font-weight: bold;
+
 }
 
 
@@ -53,12 +53,12 @@ ul li a:hover {
 
 /* ---------------------Animaciones -------------------------*/
 
-#movimiento {
+.movimiento {
     transition: transform .3s;
     }
     
     
-    #movimiento:hover {
+    .movimiento:hover {
     transform: translate(0, 8px);
     }
     
@@ -73,9 +73,6 @@ ul li a:hover {
     
       }
     
-    
-
-
 
 .contenedor2,
 .aside,
@@ -89,11 +86,34 @@ ul li a:hover {
     padding: 10px;
     color: rgb(0, 0, 0);
     font-size: 18px;
-    font-family: 'Playfair Display', serif;
     background-size: 490px;
-    background-image: url(https://http2.mlstatic.com/D_NQ_NP_881541-MLU46792563088_072021-O.jpg);
     line-height: 150%;
     }
+
+
+.titulo {
+    font-family: 'Playfair Display', serif;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+.formato {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    background-size: 490px;
+    line-height: 140%;
+    
+}
+
+.formato2 {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    background-size: 490px;
+    line-height: 50%;
+    
+}
 
     .container__title{
         min-height: 60px;
@@ -109,9 +129,6 @@ ul li a:hover {
     }
    
 
-#clientes {
-    height: 60vh;
-}
 
 .lista {
     padding: 30px;
@@ -146,7 +163,7 @@ color:rgb(61, 57, 73);
     display: flex;
     margin: auto;
     border: solid 2px;
-    min-height: auto;
+    max-height: auto;
 
 }
 
@@ -154,12 +171,12 @@ color:rgb(61, 57, 73);
 
 .container .container__box{
     width: 450px;
-    height: 1000px;
+    height: 1400px;
     overflow: hidden;
     margin: 20px;
 }
 
-.container__box img{
+.img{
    justify-content: center;
    text-align: center;
 
@@ -180,10 +197,7 @@ color:rgb(61, 57, 73);
     font-size: 19px;
 }
 
-p1 span {
-    font-size: 30px;
-    font-weight: bold;
-}
+
 
 p span {
     font-size: 30px;
@@ -253,16 +267,25 @@ display: flex;
         font-size: 19px;
 
     }
+    .formato2 {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        background-size: 490px;
+        line-height: 90%;
+        
+    }   
+
+    
 
         .container {
         display: flex;
         flex-wrap: wrap;
-        margin: 10px;
         justify-content: center;
-        text-align: center;
         width: auto;
 
     }
+
+    
 
     .container .container__text {
         display: flex;
@@ -271,13 +294,18 @@ display: flex;
         min-height: 50px;
         
     }
+
+    
+    
+
+    
         .segundogrid{
         display: grid;
         grid-template-columns: repeat(1,100%);
         grid-auto-rows: auto;
     }
         .container .container__box{
-            height: 900px;
+            height: 1100px;
             min-height: 50px;
 
         }
@@ -321,3 +349,26 @@ display: flex;
 .footer__item a:hover{
     color: rgb(255, 0, 0);
 }
+
+
+
+.mensajerapido {
+    padding: 10px;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.botonenviar{ 
+padding: 10px;
+font-weight: bold;
+
+
+}
+
+
+
+.row g-2, .col-md, .form-floating { 
+   font-size: small;
+margin: -1px;   
+ }

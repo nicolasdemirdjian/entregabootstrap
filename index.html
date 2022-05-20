@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body>
+    <body class="generico">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
-
     <title>Inicio</title>
 </head>
 
@@ -21,11 +21,11 @@
         </div>
         <nav>
             <ul class="menu">
-                <li id="movimiento"><a href="index.html">Inicio</a></li>
-                <li id="movimiento"><a href="paginas/sobrenosotros.html">Sobre Nosotros</a></li>
-                <li id="movimiento"><a href="paginas/obras.html">Obras</a></li>
-                <li id="movimiento"><a href="paginas/clientes.html">Clientes</a></li>
-                <li id="movimiento"><a href="paginas/contacto.html">Contacto</a></li>
+                <li class="movimiento"><a href="index.html">Inicio</a></li>
+                <li class="movimiento"><a href="paginas/sobrenosotros.html">Sobre Nosotros</a></li>
+                <li class="movimiento"><a href="paginas/obras.html">Obras</a></li>
+                <li class="movimiento"><a href="paginas/clientes.html">Clientes</a></li>
+                <li class="movimiento"><a href="paginas/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -40,19 +40,19 @@
 
     <!-- Contenido -->
 <div class="contenedor2">
-    <section id="inicio">
+    <section class="formato2">
 
-        <h2>Inicio</h2>
-        <p>
-            <span>B</span>ienvenido a Mega Construcción, aquí encontrarás información referida a sistemas constructivos
-            de última generación
-        </p>
-        <p>
-            <span>D</span>ebido a nuestra gran trayectoria podemos ofrecer trabajos de calidad
-        </p>
+        <h2 class="titulo">Inicio</h2>
+      
+        <p> <span>B</span>ienvenido a Mega Construcción, aquí encontrarás información referida a sistemas constructivos
+            de última generación</p>
+        
+        <p><span>D</span>ebido a nuestra gran trayectoria podemos ofrecer trabajos de calidad</p>
+        
     </section>
 
-    <section id="trabajos">
+    <section class="formato2">
+        
         <p>
             <span>N</span>uestros trabajos se basan en construcción tradicional y fundamentalmente en <span
                 class="steelframing">Steel Framing</span>
@@ -90,7 +90,7 @@
             relacionado con la nobleza y durabilidad de los edificios resultantes.
         </p>
         
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60cWZf9nCTJ82tZAG5JH__LpAgwhMgxSa7Q&usqp=CAU" id="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ60cWZf9nCTJ82tZAG5JH__LpAgwhMgxSa7Q&usqp=CAU" class="img">
            </div>
     <div class="container__box">
         <h2 class="container__title">STEEL FRAMING</h2>
@@ -115,7 +115,7 @@
 
         </p>
         <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0tXaqfwrORVKjb3amqs3jYiU7T3IOY1fRgA&usqp=CAU" id="img">
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0tXaqfwrORVKjb3amqs3jYiU7T3IOY1fRgA&usqp=CAU" class="img">
     </div>
     <div class="container__box">
         <h2 class="container__title">ISOPANEL</h2>
@@ -141,9 +141,35 @@
         </p>
 
             <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYf1NuMzWdUP1H82c2OW-6oJElf9JI-Paow&usqp=CAU" id="img">
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUYf1NuMzWdUP1H82c2OW-6oJElf9JI-Paow&usqp=CAU" class="img">
     </div>
 </div>
+
+
+<p class="mensajerapido">Escribe tu email para ponernos en contacto</p>
+
+<div class="row g-2">
+    <div class="col-md">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
+        <label for="floatingInputGrid">Escribí tu email</label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-floating">
+        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+          <option selected>Selecciona una opción</option>
+          <option value="1">Presupuesto</option>
+          <option value="2">Comercial</option>
+          <option value="3">Sugerencias</option>
+        </select>
+        <label for="floatingSelectGrid"></label>
+      </div>
+    </div>
+  </div>
+  
+  <input type="submit" value="ENVIAR" class="botonenviar">
+
 
 <footer class="footer">
     <div class="footer__item"  id="movimiento">
@@ -156,6 +182,11 @@
         <a href="#">LEGISLACIONES</a>
     </div>
 </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 
 </body>
 
